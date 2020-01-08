@@ -20,7 +20,7 @@ Since bme280-sensor needs to talk directly to the I2C bus and requires access to
 ## Example Code
 
 ```
-const BME280 = require('bme280-sensor');
+const BME280 = require('bme280-sensor-forced');
 
 // The BME280 constructor options are optional.
 // 
