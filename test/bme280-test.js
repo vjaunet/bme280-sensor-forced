@@ -1,10 +1,10 @@
 process.env.NODE_ENV = 'test';
 
 const chai   = require('chai');
-const BME280 = require('../BME280.js');
+const BME280 = require('../BME280_forced.js');
 const expect = chai.expect;
 
-describe('bme280-sensor', () => {
+describe('bme280-sensor-forced', () => {
   it('it should communicate with the device', (done) => {
     const bme280 = new BME280();
     expect(bme280).to.be.an.instanceof(BME280);

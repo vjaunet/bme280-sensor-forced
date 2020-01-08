@@ -1,14 +1,14 @@
 {
-  "name": "bme280-sensor",
+  "name": "bme280-sensor-forced",
   "version": "0.1.7",
-  "description": "A Node.js I2C module for the BME280 Humidity, Barometric Pressure, and Temperature Sensor. Also includes support for the BMP280 Barometric Pressure and Temperature Sensor.",
-  "main": "BME280.js",
+  "description": "A Node.js I2C module for the BME280 Humidity, Barometric Pressure, and Temperature Sensor. The BME280 is set in forced mode (see the datasheet). Also includes support for the BMP280 Barometric Pressure and Temperature Sensor.",
+  "main": "BME280_forced.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skylarstein/bme280-sensor.git"
+    "url": "git+https://github.com/vjaunet/bme280-sensor.git"
   },
   "keywords": [
     "BME280",
@@ -30,7 +30,8 @@
   },
   "homepage": "https://github.com/skylarstein/bme280-sensor#readme",
   "dependencies": {
-    "i2c-bus": "^5.1.0"
+    "i2c-bus": "^5.1.0",
+    "sleep": "^6.1.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
